@@ -111,3 +111,28 @@ function modifyFunction(int, string, alsoInt) {
     console.log("Second is: ", string);
     console.log("Third is: ", alsoInt);
 }
+
+// 8)
+//Create two objects that each contain different properties. Use the spread operator to combine the two objects into a third object.
+
+
+
+
+    let objectOne = {
+        name: "Widdard",
+        age: "103",
+        location: "Sumforest"
+    }
+    
+    let objectTwo = {
+        interest: "To summon shit",
+        occupation: "To make mortals misserable"
+    }
+    
+
+    let objectThree = {...objectOne, ...objectTwo}
+
+    console.log(objectThree)
+
+
+
