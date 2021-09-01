@@ -63,13 +63,14 @@ let mapCatsArray = () => {
     cats.map( item => {
         console.log(item.name)
     }) 
+    
 }
 mapCatsArray()
 
 // 6)
 // Create a person object, with things like name, age, eye color, etc. Give that object a method that prints the person.
 
-let persons = [
+
     
     person = [
         {
@@ -84,26 +85,29 @@ let persons = [
             age: 2,
             eyeColor: "blue",
         }
-    ],
-    occupation = [
-        {
-            id: 1,
-            work: "not currently",
-            Interest: "Make my parents rip their hair off",  
-        },
-        {
-            id: 2,
-            work: "not currently",
-            Interest: "Make my parents rip their hair off",  
-        }
     ]
+ 
     
-]
+    let printPerson = () => {
+        person.forEach( item => {
+            console.log(item.name)
+        })
+       
+    }
+    printPerson()
+
 
 // 7)
-
-let functionSeven = (persons, callback) => {
+// Create a function that takes an array and an element, and returns a new array containing both
+let functionSeven = () => {
+    let sevenArray = [1, "two", 3];
     
-    console.log(persons.person.name)
+    modifyFunction(...sevenArray)
 }
 functionSeven()
+
+function modifyFunction(int, string, alsoInt) {
+    console.log("First is: ", int);
+    console.log("Second is: ", string);
+    console.log("Third is: ", alsoInt);
+}
